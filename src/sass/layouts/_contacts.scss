@@ -3,8 +3,6 @@
 }
 
 .contacts {
-    font-family: 'DM Sans';
-    font-style: normal;
     @include font(12px, 500, 1.86, 0.04em);
 }
 
@@ -51,7 +49,7 @@
     color: var(--sec-text-color);
 }
 
-.contacts__box--working-time {
+.contacts__box-working-time {
     padding-top: 24px;
     padding-bottom: 24px;
     margin-bottom: 24px;
