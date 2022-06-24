@@ -7,6 +7,7 @@
 .advantages__list {
   display: grid;
   gap: 32px;
+  word-wrap: break-word;
 
   @include mq(tablet) {
     display: flex;
