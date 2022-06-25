@@ -1,7 +1,7 @@
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #fff5f6;
+  background-color: $sec-bg-color;
 }
 
 .advantages__list {
@@ -38,7 +38,6 @@
     content: '';
     width: 33px;
     height: 50px;
-    background-color: red;
     background: url(../images/advantage-img-1.png);
 
     @include mq(tablet) {
@@ -58,7 +57,6 @@
     content: '';
     width: 50px;
     height: 50px;
-    background-color: red;
     background: url(../images/advantage-img-2.png);
 
     @include mq(tablet) {
@@ -78,7 +76,6 @@
     content: '';
     width: 46px;
     height: 50px;
-    background-color: red;
     background: url(../images/advantage-img-3.png);
 
     @include mq(tablet) {
@@ -95,14 +92,14 @@
 
 .advantages__amount {
   margin-bottom: 16px;
-  font-family: 'Titan One';
+  font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: $sec-accent-color;
 
   @include mq(tablet) {
     font-size: 48px;
@@ -116,12 +113,12 @@
 }
 
 .advantages__text {
-  font-family: 'DM Sans';
+  font-family: $pr-font;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
 
-  color: #000000;
+  color: $pr-text-color;
 
   @include mq(tablet) {
     font-size: 14px;
