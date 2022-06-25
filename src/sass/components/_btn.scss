@@ -1,0 +1,141 @@
+// General styles for a button
+// Основні стилі кнопок
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
+  padding-right: 37px;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 22px;
+  border: transparent;
+
+  color: #d41443;
+  background-color: #ffffff;
+
+  font-family: var($pr-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+
+  cursor: pointer;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+    color: #d41443;
+  }
+}
+.btn__icon {
+  fill: currentColor;
+  margin-left: 16px;
+  margin-bottom: -1px;
+
+  @include mq(tablet) {
+    margin-left: 12px;
+  }
+}
+
+// Додаткові стилі кнопок
+
+// Header button
+
+// .header__btn {
+//   font-size: 16px;
+//   line-height: 1.31;
+// }
+
+// Hero buttons
+
+// .hero__btn {
+//   min-height: 24px;
+//   border-radius: 12px;
+
+//   font-weight: 400;
+//   font-size: 8px;
+//   line-height: 10px;
+
+//   color: #ffffff;
+//   background-color: #d41443;
+
+//   @include mq(desktop) {
+//     min-width: 107px;
+//     min-height: 40px;
+//     border-radius: 20px;
+
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.28;
+//   }
+
+//   &.left {
+//     color: #ffffff;
+//     background-color: #d41443;
+//     min-width: 62px;
+
+//     @include mq(desktop) {
+//       min-width: 107px;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       background: #740621;
+//     }
+//   }
+
+//   &.right {
+//     color: #d41443;
+//     background-color: #ffffff;
+//     min-width: 83px;
+
+//     @include mq(desktop) {
+//       min-width: 138px;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       background: #ecebeb;
+//     }
+//   }
+// }
+
+// Advantages button
+
+// .advantages__btn {
+//   min-width: 176px;
+// }
+
+// Footer butons
+
+// .footer__btn {
+//   min-width: 162px;
+//   font-size: 16px;
+//   line-height: 1.31;
+
+//   &.left {
+//     color: #ffffff;
+//     background-color: #d41443;
+
+//     @include mq(tablet) {
+//       min-width: 192px;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       background: #740621;
+//     }
+//   }
+
+//   &.right {
+//     @include mq(tablet-only) {
+//       min-width: 174px;
+//     }
+
+//     @include mq(desktop) {
+//       min-width: 168px;
+//     }
+//   }
+// }
