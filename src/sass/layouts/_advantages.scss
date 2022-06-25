@@ -1,6 +1,5 @@
 .advantages {
   padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #fff5f6;
 }
 
@@ -39,9 +38,11 @@
     width: 33px;
     height: 50px;
     background: url(../images/advantages_1-sm.png);
+    background-size: contain;
 
     @include mq(retina) {
       background: url(../images/advantages_1-sm@2x.png);
+      background-size: contain;
     }
 
     @include mq(tablet) {
@@ -62,9 +63,11 @@
     width: 50px;
     height: 50px;
     background: url(../images/advantages_2-sm.png);
+    background-size: contain;
 
     @include mq(retina) {
       background: url(../images/advantages_2-sm@2x.png);
+      background-size: contain;
     }
 
     @include mq(tablet) {
@@ -85,9 +88,11 @@
     width: 46px;
     height: 50px;
     background: url(../images/advantages_3-sm.png);
+    background-size: contain;
 
     @include mq(retina) {
       background: url(../images/advantages_3-sm@2x.png);
+      background-size: contain;
     }
 
     @include mq(tablet) {
