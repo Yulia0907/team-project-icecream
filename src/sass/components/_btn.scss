@@ -14,9 +14,9 @@
   color: var(--sec-accent-color);
   background-color: var(--pr-white-color);
 
-  font-family: var($pr-font);
+  font-family: var(--pr-font);
+  font-size: var(--primary-fz);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.28;
 
   cursor: pointer;
