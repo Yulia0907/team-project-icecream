@@ -4,8 +4,9 @@
 .btn {
   display: flex;
   align-items: center;
+  padding-left: 37px;
+  padding-right: 37px;
   justify-content: center;
-  min-width: 186px;
   min-height: 44px;
   border-radius: 22px;
   border: transparent;
@@ -41,95 +42,100 @@
 // Додаткові стилі кнопок
 
 // Header button
-.header__btn {
-  font-size: 16px;
-  line-height: 1.31;
-}
+
+// .header__btn {
+//   font-size: 16px;
+//   line-height: 1.31;
+// }
 
 // Hero buttons
-.hero__btn {
-  min-height: 24px;
-  border-radius: 12px;
 
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
+// .hero__btn {
+//   min-height: 24px;
+//   border-radius: 12px;
 
-  color: #ffffff;
-  background-color: #d41443;
+//   font-weight: 400;
+//   font-size: 8px;
+//   line-height: 10px;
 
-  @include mq(desktop) {
-    min-width: 107px;
-    min-height: 40px;
-    border-radius: 20px;
+//   color: #ffffff;
+//   background-color: #d41443;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
-  }
+//   @include mq(desktop) {
+//     min-width: 107px;
+//     min-height: 40px;
+//     border-radius: 20px;
 
-  &.left {
-    color: #ffffff;
-    background-color: #d41443;
-    min-width: 62px;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.28;
+//   }
 
-    @include mq(desktop) {
-      min-width: 107px;
-    }
+//   &.left {
+//     color: #ffffff;
+//     background-color: #d41443;
+//     min-width: 62px;
 
-    &:hover,
-    &:focus {
-      background: #740621;
-    }
-  }
+//     @include mq(desktop) {
+//       min-width: 107px;
+//     }
 
-  &.right {
-    color: #d41443;
-    background-color: #ffffff;
-    min-width: 83px;
+//     &:hover,
+//     &:focus {
+//       background: #740621;
+//     }
+//   }
 
-    @include mq(desktop) {
-      min-width: 138px;
-    }
+//   &.right {
+//     color: #d41443;
+//     background-color: #ffffff;
+//     min-width: 83px;
 
-    &:hover,
-    &:focus {
-      background: #ecebeb;
-    }
-  }
-}
+//     @include mq(desktop) {
+//       min-width: 138px;
+//     }
+
+//     &:hover,
+//     &:focus {
+//       background: #ecebeb;
+//     }
+//   }
+// }
 
 // Advantages button
-.advantages__btn {
-  min-width: 176px;
-}
+
+// .advantages__btn {
+//   min-width: 176px;
+// }
+
 // Footer butons
-.footer__btn {
-  min-width: 162px;
-  font-size: 16px;
-  line-height: 1.31;
 
-  &.left {
-    color: #ffffff;
-    background-color: #d41443;
+// .footer__btn {
+//   min-width: 162px;
+//   font-size: 16px;
+//   line-height: 1.31;
 
-    @include mq(tablet) {
-      min-width: 192px;
-    }
+//   &.left {
+//     color: #ffffff;
+//     background-color: #d41443;
 
-    &:hover,
-    &:focus {
-      background: #740621;
-    }
-  }
+//     @include mq(tablet) {
+//       min-width: 192px;
+//     }
 
-  &.right {
-    @include mq(tablet-only) {
-      min-width: 174px;
-    }
+//     &:hover,
+//     &:focus {
+//       background: #740621;
+//     }
+//   }
 
-    @include mq(desktop) {
-      min-width: 168px;
-    }
-  }
-}
+//   &.right {
+//     @include mq(tablet-only) {
+//       min-width: 174px;
+//     }
+
+//     @include mq(desktop) {
+//       min-width: 168px;
+//     }
+//   }
+// }
