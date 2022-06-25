@@ -14,13 +14,12 @@
   }
   &__pr-text {
     @include font(18px, 400, 1.16, null);
-    display: inline-block;
+    display: block;
     color: var(--pr-accent-color);
     margin-bottom: 16px;
   }
   &__sec-text {
     @include font(34px, 400, 1.147, 0.04em);
-    display: inline-block;
     color: var(--sec-accent-color);
   }
   &__contacts {
@@ -102,6 +101,33 @@
     &-copyright {
       @include font(14px, 700, 1.86, 0.02em);
       width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 4px;
+    &-wrap {
+      padding-bottom: 60px;
+      margin-bottom: 7px;
+    }
+    &__text {
+      width: 480px;
+    }
+    &__pr-text {
+      @include font(30px, 400, 1.133, 0.04em);
+      margin-bottom: 16px;
+    }
+    &__sec-text {
+      @include font(58px, 400, 1.137, 0.06em);
+    }
+    &__contacts {
+      margin-top: 0;
+      justify-content: end;
+    }
+    &__tel {
+      @include font(16px, 700, 1.86, 0.02em);
     }
   }
 }
