@@ -4,5 +4,51 @@
   &-wrap {
     padding-bottom: 40px;
     border-bottom: var(--border-line);
+    margin-bottom: 16px;
+  }
+  &__text {
+    width: 232px;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__pr-text {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.16;
+    color: var(--pr-accent-color);
+    margin-bottom: 16px;
+  }
+  &__sec-text {
+    display: inline-block;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 1.147;
+    color: var(--sec-accent-color);
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__social {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__social-item {
+    display: block;
+  }
+  &__social-item + &__social-item {
+    margin-left: 30px;
+  }
+  &__social-link {
+    display: inline-block;
+  }
+  &__social-icon {
+    display: block;
+  }
+
+  &-copyright {
+    text-align: center;
   }
 }
