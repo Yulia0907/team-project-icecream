@@ -1,7 +1,7 @@
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: $sec-bg-color;
+  background-color: #fff5f6;
 }
 
 .advantages__list {
@@ -92,14 +92,14 @@
 
 .advantages__amount {
   margin-bottom: 16px;
-  font-family: $title-font;
+  font-family: var(--title-font);
   font-weight: 400;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: $sec-accent-color;
+  color: var(--sec-accent-color);
 
   @include mq(tablet) {
     font-size: 48px;
@@ -113,12 +113,12 @@
 }
 
 .advantages__text {
-  font-family: $pr-font;
+  font-family: var(--pr-font);
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
 
-  color: $pr-text-color;
+  color: var(--pr-text-color);
 
   @include mq(tablet) {
     font-size: 14px;
