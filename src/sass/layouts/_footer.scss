@@ -22,8 +22,8 @@
   &__sec-text {
     display: inline-block;
     font-size: 34px;
-    line-height: 39px;
-    letter-spacing: 1.147;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
     color: var(--sec-accent-color);
   }
   &__contacts {
@@ -42,13 +42,39 @@
     margin-left: 30px;
   }
   &__social-link {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--soc-bg-color);
+    @include transition(background-color);
+    &:hover {
+      background-color: var(--sec-accent-color);
+    }
   }
   &__social-icon {
     display: block;
+    fill: var(--pr-white-color);
+  }
+  &__tel {
+    font-family: var(--pr-font);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    color: var(--sec-accent-color);
+  }
+  &__tel--text {
+    color: var(--pr-text-color);
   }
 
   &-copyright {
     text-align: center;
+    font-family: var(--pr-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    color: var(--sec-text-color);
   }
 }
