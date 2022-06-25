@@ -11,8 +11,8 @@
   border-radius: 22px;
   border: transparent;
 
-  color: #d41443;
-  background-color: #ffffff;
+  color: var(--sec-accent-color);
+  background-color: var(--pr-white-color);
 
   font-family: var($pr-font);
   font-weight: 700;
@@ -25,8 +25,8 @@
 
   &:hover,
   &:focus {
-    background: #ecebeb;
-    color: #d41443;
+    background: var(--sec-btn-color);
+    color: var(--sec-accent-color);
   }
 }
 .btn__icon {
