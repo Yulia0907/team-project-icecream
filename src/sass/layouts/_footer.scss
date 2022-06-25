@@ -62,7 +62,6 @@
   &__tel--text {
     color: var(--pr-text-color);
   }
-
   &-copyright {
     @include font(14px, 700, 1.52, null);
     text-align: center;
@@ -74,6 +73,7 @@
 
 @include mq(tablet) {
   .footer {
+    padding-bottom: 8px;
     &-wrap {
       margin-bottom: 8px;
     }
