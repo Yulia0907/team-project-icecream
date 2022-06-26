@@ -8,9 +8,7 @@
         background-position: 0 390px;
         padding-bottom: 0;
 
-            @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
+            @include mq(retina) {
                     background-image: url(../images/bg_milk-sm@2x.png);
                 }
     
@@ -23,16 +21,13 @@
             background-image: url(../images/bg_milk-ld.png);
             background-position: 50% 50%;
 
-            @media (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
+            @include mq(retina) {
                     background-image: url(../images/bg_milk-ld@2x.png);
-                }
-                
+                }     
         }
 }
 
-.about__group__text {
+.about__group-text {
     @include mq(tablet) {
         margin-left: 32px;
     }
@@ -113,6 +108,6 @@
         }
 }
 
-.about__btn__icon {
+.about__btn-icon {
     fill: var(--sec-accent-color);
 }
