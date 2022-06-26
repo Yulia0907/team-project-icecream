@@ -1,6 +1,17 @@
 .gallery {
   padding-top: 60px;
-  background-image: linear-gradient(180deg, #fff5f6 44.9%, #fff 45%);
+  padding-bottom: 60px;
+  background-image: linear-gradient(180deg, #fff5f6 35.9%, #fff 36%);
+
+  @include mq(tablet) {
+    padding-top: 80px;
+    background-image: linear-gradient(#fff5f6 56.9%, #fff 57%);
+  }
+
+  @include mq(desktop) {
+    padding-top: 120px;
+    background-image: linear-gradient(#fff5f6 35.9%, #fff 36%);
+  }
 }
 
 .gallery__list {
@@ -21,6 +32,10 @@
     grid-template-columns: repeat(7, 138px);
     grid-template-rows: repeat(9, 41px);
   }
+}
+
+.gallery__item {
+  @include transition(transform);
 }
 
 .gallery__item:hover {
