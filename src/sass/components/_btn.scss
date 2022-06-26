@@ -7,7 +7,7 @@
   padding-left: 37px;
   padding-right: 37px;
   justify-content: center;
-  min-height: 44px;
+  height: 44px;
   border-radius: 22px;
   border: transparent;
 
@@ -25,7 +25,7 @@
 
   &:hover,
   &:focus {
-    background: var(--sec-btn-color);
+    background: #ECEBEB;
     color: var(--sec-accent-color);
   }
 }
