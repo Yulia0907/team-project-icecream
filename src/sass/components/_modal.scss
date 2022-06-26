@@ -21,6 +21,10 @@ textarea {
   overflow: scroll;
 
   @include transition(opacity);
+
+  @include mq(mobile-only) {
+    padding: 94px 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -40,12 +44,15 @@ textarea {
 
   padding: 40px;
   max-width: 450px;
-  min-height: 500px;
 
   background-color: var(--pr-bg-color);
 
   transform: translate(-50%, -50%);
   @include transition(tramsform);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
 }
 
 .modal__close {
@@ -53,12 +60,8 @@ textarea {
   top: 10px;
   right: 10px;
 
-  width: 25px;
-  height: 25px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 28px;
+  height: 28px;
 
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -73,6 +76,14 @@ textarea {
   }
 
   @include transition(border_color, fill);
+}
+
+.modal__icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
 
 .modal__title {
