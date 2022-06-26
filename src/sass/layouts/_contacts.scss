@@ -1,9 +1,34 @@
-.contacts__item:not(:last-child) {
-    margin-bottom: 20px;
+.contacts {
+    background-image: linear-gradient( #fff 23%, #fff5f6 23%);
+    @include mq(tablet) {
+        background-image: linear-gradient( #fff 39%, #fff5f6 39%);
+    }
+    @include mq(desktop) {
+        background-image: linear-gradient( #fff 20%, #fff5f6 20%);
+    }
 }
 
-.contacts {
+.contacts__list {
     @include font(12px, 500, 1.86, 0.04em);
+    margin-bottom: 32px;
+    @include mq(tablet) {
+        display: flex;
+        margin: -16px;
+        margin-bottom: 59px;
+    }
+}
+
+.contacts__item {
+    @include mq(tablet) {
+        flex-basis: calc((100% - 64px) / 3);
+        margin: 16px;
+    }
+}
+
+@include mq(mobile-only) {
+    .contacts__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 
 .contacts__container {
@@ -58,6 +83,71 @@
     border-bottom: 1px solid #E1E1E1;
 }
 
-.contacts__link {
+.contacts__box-link {
     color: var(--sec-text-color);
+}
+
+.contacts__box-link:hover,
+.contacts__box-link:focus {
+    color: var(--sec-accent-color);
+}
+
+.btn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mq(tablet) {
+        flex-direction: row;
+    }
+}
+
+.btn-list__item:not(:last-child) {
+    @include mq(mobile-only) {
+        margin-bottom: 8px;
+    }
+    @include mq(tablet) {
+        margin-right: 15px;
+    }
+    @include mq(desktop) {
+        margin-right: 12px;
+    }
+}
+
+.btn-list__btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--pr-white-color);
+    background: var(--sec-accent-color);
+    border-radius: 22px;
+    border: none;
+    @include mq(mobile-only) {
+        min-width: 161px;
+    }
+    @include mq(tablet) {
+        padding: 10px 37px;
+    }
+}
+
+.btn-list__btn:hover,
+.btn-list__btn:focus {
+    color: var(--sec-accent-color);
+    background: var(--pr-white-color);
+}
+
+.btn__icon {
+    fill: var(--pr-white-color);
+    ;
+    margin-left: 8px;
+}
+
+.btn-list__btn:hover .btn__icon {
+    fill: var(--sec-accent-color);
+}
+
+.btn-list__btn:focus .btn__icon {
+    fill: var(--sec-accent-color);
 }
