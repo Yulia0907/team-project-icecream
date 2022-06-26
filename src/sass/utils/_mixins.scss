@@ -23,7 +23,7 @@
         }
     }
     @if $type=='mobile-only' {
-        @media screen and (min-width: $mobile) {
+        @media screen and (max-width: #{$tablet - 0.02}) {
             @content;
         }
     }
