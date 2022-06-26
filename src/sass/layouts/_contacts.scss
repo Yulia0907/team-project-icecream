@@ -102,6 +102,10 @@
     }
 }
 
+.btn-list__item {
+    animation: anim 1s cubic-bezier(.4, 0, .2, 1) 0.5s infinite alternate both;
+}
+
 .btn-list__item:not(:last-child) {
     @include mq(mobile-only) {
         margin-bottom: 8px;
@@ -124,6 +128,7 @@
     background: var(--sec-accent-color);
     border-radius: 22px;
     border: none;
+    @include transition(transform);
     @include mq(mobile-only) {
         min-width: 161px;
     }
@@ -136,6 +141,7 @@
 .btn-list__btn:focus {
     color: var(--sec-accent-color);
     background: var(--pr-white-color);
+    transform: scale(1.1);
 }
 
 .btn__icon {
