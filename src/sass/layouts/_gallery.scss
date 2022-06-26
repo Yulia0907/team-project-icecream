@@ -34,6 +34,10 @@
   }
 }
 
+.gallery__item {
+  @include transition(transform);
+}
+
 .gallery__item:hover {
   transform: scale(1.1);
   @include transition(transform);
