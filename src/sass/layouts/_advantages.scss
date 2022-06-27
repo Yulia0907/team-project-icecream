@@ -39,10 +39,12 @@
     height: 50px;
     background: url(../images/advantages_1-sm.png);
     background-size: contain;
+    background-repeat: no-repeat;
 
     @include mq(retina) {
       background: url(../images/advantages_1-sm@2x.png);
       background-size: contain;
+      background-repeat: no-repeat;
     }
 
     @include mq(tablet) {
@@ -64,10 +66,12 @@
     height: 50px;
     background: url(../images/advantages_2-sm.png);
     background-size: contain;
+    background-repeat: no-repeat;
 
     @include mq(retina) {
       background: url(../images/advantages_2-sm@2x.png);
       background-size: contain;
+      background-repeat: no-repeat;
     }
 
     @include mq(tablet) {
@@ -89,10 +93,12 @@
     height: 50px;
     background: url(../images/advantages_3-sm.png);
     background-size: contain;
+    background-repeat: no-repeat;
 
     @include mq(retina) {
       background: url(../images/advantages_3-sm@2x.png);
       background-size: contain;
+      background-repeat: no-repeat;
     }
 
     @include mq(tablet) {
