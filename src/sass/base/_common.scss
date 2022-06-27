@@ -1,14 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--pr-font);
-  font-size: var(--primary-fz);
-}
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;

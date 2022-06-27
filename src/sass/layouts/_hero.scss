@@ -1,6 +1,7 @@
 .hero {
   height: 502px;
   background-color: var(--pr-bg-color);
+  overflow: hidden;
 
   @include mq(tablet) {
     height: 416px;
@@ -13,10 +14,6 @@
 .hero__container {
   height: 100%;
   position: relative;
-
-  @media screen and (max-width: 465px) {
-    overflow: hidden;
-  }
 }
 
 .hero__ellipse {
@@ -49,6 +46,9 @@
   bottom: 0;
   right: 12px;
 
+  animation: appearance 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
+
   @include mq(tablet) {
     width: 143px;
     right: 270px;
@@ -57,6 +57,10 @@
   @include mq(desktop) {
     width: 236px;
     right: 328px;
+  }
+
+  .hero:hover & {
+    transform: scale(1.05);
   }
 }
 
@@ -69,6 +73,8 @@
     bottom: 16px;
 
     display: block;
+
+    animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1) 200ms;
   }
 
   @include mq(desktop) {
@@ -87,6 +93,8 @@
     right: 32px;
 
     display: block;
+
+    animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1) 300ms;
   }
 
   @include mq(desktop) {
@@ -166,10 +174,6 @@
   min-width: 62px;
   cursor: pointer;
 
-  color: var(--pr-white-color);
-  background-color: var(--sec-accent-color);
-
-  // font-family: var(--pr-font);
   @include font(8px, 400, 1.3);
   @include transition(background-color, color);
 
@@ -178,11 +182,26 @@
     min-width: 107px;
     padding: 11px 16px;
   }
+}
+
+.hero__btn--red {
+  color: var(--pr-white-color);
+  background-color: var(--sec-accent-color);
 
   &:hover,
   &:focus {
     background: var(--pr-white-color);
     color: var(--sec-accent-color);
+  }
+}
+
+.hero__btn--white {
+  color: var(--sec-accent-color);
+  background-color: var(--pr-white-color);
+
+  &:hover,
+  &:focus {
+    background: var(--btn-hvr-color);
   }
 }
 
@@ -308,6 +327,7 @@
   width: 18px;
   height: 18px;
   cursor: pointer;
+  background-color: var(--pr-white-color);
 
   @include mq(desktop) {
     width: 26px;
