@@ -16,7 +16,6 @@
 
     @include mq(tablet-only) {
       max-width: 254px;
-      height: 1020px;
       right: 40px;
     }
 
@@ -46,7 +45,12 @@
 }
 .mobile-menu__item {
   font-weight: 700;
+  @include transition(transform, color);
 
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
   @include mq(not-desktop) {
     padding: 10px 20px;
     border-bottom: 1px solid #e18298;
@@ -72,6 +76,17 @@
   font-size: 16px;
   line-height: 1.31;
 
+  @include transition(transform, background-color, color);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  @include mq(desktop) {
+    display: none;
+  }
+
   @include mq(not-desktop) {
     width: 210px;
 
@@ -83,11 +98,11 @@
 
 .mobile-menu__link {
   color: var(--pr-white-color);
+  @include transition(color);
 
   &:hover,
   &:focus {
     color: var(--sec-accent-color);
+    
   }
-
-  @include transition(color);
 }
