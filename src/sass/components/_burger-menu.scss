@@ -1,5 +1,6 @@
 .mobile-menu {
   @include mq(not-desktop) {
+    overflow: hidden;
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -8,15 +9,14 @@
     right: 0;
 
     max-width: 250px;
-    height: 502px;
+    height: 100vh;
 
-    background-color: #e17992;
+    background-color: var(--bg-cl-mb-menu);
     transform: translateY(-100%);
     @include transition(opacity, visibility, transform);
 
     @include mq(tablet-only) {
-      max-width: 254px;
-      right: 40px;
+      right: 30px;
     }
 
     &.is-open {
@@ -51,16 +51,16 @@
   &:focus {
     transform: scale(1.1);
   }
-  @include mq(not-desktop) {
-    padding: 10px 20px;
-    border-bottom: 1px solid #e18298;
 
+  @include mq(not-desktop) {
+    border-bottom: var(--border-mb-menu);
+    padding: 10px 20px;
     font-family: var(--pr-font);
     font-size: var(--primary-fz);
     line-height: 1.28;
 
     &:first-child {
-      border-top: 1px solid #e18298;
+      border-top: var(--border-mb-menu);
     }
   }
 
@@ -103,6 +103,5 @@
   &:hover,
   &:focus {
     color: var(--sec-accent-color);
-    
   }
 }
