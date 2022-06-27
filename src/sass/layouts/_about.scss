@@ -6,7 +6,14 @@
     background-image: url(../images/bg_milk-sm.png);
         background-repeat: no-repeat;
         background-position: 0 390px;
+        background-size: contain;
         padding-bottom: 0;
+
+        :hover {
+                transform: scale(1.1);
+                @include transition(transform);
+
+        }
 
             @include mq(retina) {
                     background-image: url(../images/bg_milk-sm@2x.png);
@@ -102,6 +109,7 @@
     color: var(--sec-accent-color);
     background: var(--pr-white-color);
     border-radius: 22px;
+    animation: anim 1s cubic-bezier(.4, 0, .2, 1) 0.5s infinite alternate both;
         &:hover,
         &:focus {
             background: #ECEBEB;
