@@ -58,10 +58,10 @@
     width: 236px;
     right: 328px;
   }
-}
 
-.hero:hover .hero__image-icecream {
-  transform: scale(1.05);
+  .hero:hover & {
+    transform: scale(1.05);
+  }
 }
 
 .hero__image-milk {
@@ -75,7 +75,6 @@
     display: block;
 
     animation: appearance 1s cubic-bezier(0.4, 0, 0.2, 1) 200ms;
-    @include transition(transform);
   }
 
   @include mq(desktop) {
