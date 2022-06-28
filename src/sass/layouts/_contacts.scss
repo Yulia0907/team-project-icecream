@@ -126,7 +126,7 @@
 .btn-list__btn {
     @include transition(transform, background-color, color);
     @include mq(mobile-only) {
-        min-width: 161px;
+        min-width: 190px;
     }
     @include mq(tablet) {
         padding: 10px 37px;
