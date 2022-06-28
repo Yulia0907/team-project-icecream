@@ -203,6 +203,7 @@
   &:focus {
     background: var(--btn-hvr-color);
   }
+  animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s infinite alternate both;
 }
 
 .hero__numbers {
@@ -230,6 +231,7 @@
   @include mq(desktop) {
     font-size: 46px;
   }
+  animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
 }
 
 .hero__ellipse--sm {
@@ -329,9 +331,16 @@
   cursor: pointer;
   background-color: var(--pr-white-color);
 
+  @include transition(box-shadow);
+
   @include mq(desktop) {
     width: 26px;
     height: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px #dc6569;
   }
 }
 
