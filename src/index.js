@@ -4,3 +4,4 @@ import './js/map-modal';
 import './js/fslightbox';
 import './js/franchise-modal';
 import './js/about-modal';
+import './js/read-more';
