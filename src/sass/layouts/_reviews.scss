@@ -169,6 +169,7 @@
   width: 32px;
   height: 4px;
   background-image: url('../icons/ellipse.svg');
+  background-repeat: no-repeat;
   background-size: contain;
 
   @include mq(tablet-only) {
