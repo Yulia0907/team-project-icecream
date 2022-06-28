@@ -7,3 +7,5 @@ import './js/franchise-modal';
 import './js/about-modal';
 import './js/read-more';
 import './js/slider';
+
+import './js/btn-to-top';
