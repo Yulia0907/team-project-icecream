@@ -67,8 +67,6 @@
     padding-top: 160px;
     padding-bottom: 40px;
 
-    @include transition(transform); 
-
         &:first-child {
             background-color: var(--pr-bg-color);
         }
@@ -116,6 +114,8 @@
 
              width: 100%;
              height: 280px;
+
+            @include transition(transform);
                 
             @include mq(tablet) {
         top: -138px;
@@ -297,7 +297,6 @@
         width: 40px;
         border-radius: 50%;
         border: transparent;
-        background-image: url(/src/images/arrow-right.png);
       
         display: block;
         margin-left: auto;

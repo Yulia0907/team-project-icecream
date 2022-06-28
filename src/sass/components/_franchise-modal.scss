@@ -32,25 +32,10 @@ textarea {
     }
 }
 
-.modal {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    padding: 25px 23px 10px;
-    max-width: 450px;
-    border-radius: 24px;
-    background-color: var(--pr-bg-color);
-    transform: translate(-50%, -50%);
-    @include transition(tramsform);
-    @media screen and (min-width: 768px) {
-        position: absolute;
-    }
-}
-
 .modal__close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
     width: 28px;
     height: 28px;
     background-color: transparent;
@@ -74,7 +59,7 @@ textarea {
 }
 
 .modal__title {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-family: var(--title-font);
     font-weight: 400;
     font-size: 20px;
@@ -121,7 +106,7 @@ textarea {
 
 .modal__textarea {
     padding: 10px;
-    height: 120px;
+    height: 80px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
@@ -137,6 +122,71 @@ textarea {
     @include transition(border-color);
 }
 
+.modal__radio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.modal__text-radio {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--sec-accent-color);
+}
+
+.modal__label-radio {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+.modal__input-radio {
+    margin-right: 5px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+// Custom radio
+.custom-radio-btn {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 2px solid var(--sec-accent-color);
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 5px;
+}
+
+.custom-radio-btn::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--pr-bg-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    @include transition();
+}
+
+.modal__input-radio:checked+.custom-radio-btn::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+// Custom radio
 .modal__checkbox {
     display: flex;
     align-items: center;

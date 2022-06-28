@@ -23,6 +23,11 @@
         flex-basis: calc((100% - 64px) / 3);
         margin: 16px;
     }
+    @include transition(transform);
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
 }
 
 @include mq(mobile-only) {
@@ -119,18 +124,9 @@
 }
 
 .btn-list__btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: var(--pr-white-color);
-    background: var(--sec-accent-color);
-    border-radius: 22px;
-    border: none;
-    @include transition(transform);
+    @include transition(transform, background-color, color);
     @include mq(mobile-only) {
-        min-width: 161px;
+        min-width: 190px;
     }
     @include mq(tablet) {
         padding: 10px 37px;
@@ -139,21 +135,16 @@
 
 .btn-list__btn:hover,
 .btn-list__btn:focus {
-    color: var(--sec-accent-color);
-    background: var(--pr-white-color);
+    background: var(--btn-hvr-color);
     transform: scale(1.1);
 }
 
-.btn__icon {
-    fill: var(--pr-white-color);
-    ;
-    margin-left: 8px;
-}
-
-.btn-list__btn:hover .btn__icon {
-    fill: var(--sec-accent-color);
-}
-
-.btn-list__btn:focus .btn__icon {
-    fill: var(--sec-accent-color);
+.btn-list__btn--red {
+    color: var(--pr-white-color);
+    background-color: var(--sec-accent-color);
+    &:hover,
+    &:focus {
+        background: var(--pr-white-color);
+        color: var(--sec-accent-color);
+    }
 }
