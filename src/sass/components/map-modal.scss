@@ -1,5 +1,16 @@
 .map-modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
     padding: 15px;
+    max-width: 450px;
+    border-radius: 24px;
+    background-color: var(--pr-bg-color);
+    transform: translate(-50%, -50%);
+    @include transition(tramsform);
+    @include mq(tablet) {
+        position: absolute;
+    }
 }
 
 .map-modal__item:not(:last-child) {
