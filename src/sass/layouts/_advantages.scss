@@ -10,11 +10,8 @@
 
   @include mq(tablet) {
     display: flex;
-    gap: 22px;
-  }
-
-  @include mq(desktop) {
     justify-content: space-between;
+    gap: 22px;
   }
 }
 

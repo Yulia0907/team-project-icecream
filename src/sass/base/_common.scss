@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
