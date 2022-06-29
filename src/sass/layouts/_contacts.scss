@@ -9,10 +9,14 @@
 }
 
 .contacts__list {
+    display: flex;
+    flex-direction: column;
     @include font(12px, 500, 1.86, 0.04em);
     margin-bottom: 32px;
+    align-items: center;
+    justify-content: center;
     @include mq(tablet) {
-        display: flex;
+        flex-direction: row;
         margin: -16px;
         margin-bottom: 59px;
     }
@@ -35,6 +39,9 @@
 }
 
 @include mq(mobile-only) {
+    .contacts__item {
+        max-width: 280px;
+    }
     .contacts__item:not(:last-child) {
         margin-bottom: 20px;
     }
