@@ -35,8 +35,6 @@
   }
 }
 
-@include mq(desktop) {
-  .back-to-top-show {
-    transform: translateY(0);
-  }
+.back-to-top-show {
+  transform: translateY(0);
 }
