@@ -46,6 +46,10 @@
     }
   }
 
+  @include mq(mobile-only) {
+     max-width: 280px;
+    }
+
   @include mq(tablet) {
     margin-right: 16px;
     flex-basis: calc((100% - 32px) / 3);
