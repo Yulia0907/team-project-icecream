@@ -231,7 +231,7 @@
   @include mq(desktop) {
     font-size: 46px;
   }
-  animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
+  // animation: anim 1s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite alternate both;
 }
 
 .hero__ellipse--sm {
