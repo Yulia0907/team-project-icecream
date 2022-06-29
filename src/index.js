@@ -9,3 +9,7 @@ import './js/read-more';
 import './js/slider';
 
 import './js/btn-to-top';
+
+import './js/products-cream';
+import './js/products-coffee';
+import './js/products-milkshakes';
