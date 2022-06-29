@@ -11,9 +11,13 @@
 }
 
 .products__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @include mq(tablet) {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
