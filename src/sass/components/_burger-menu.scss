@@ -7,22 +7,20 @@
     z-index: 99;
     top: 0;
     right: 0;
-
-    max-width: 250px;
-    height: 100vh;
+    max-width: 0px;
+    height: 0px;
 
     background-color: var(--bg-cl-mb-menu);
-    transform: translateY(-100%);
+    transform: translateX(100%);
     @include transition(opacity, visibility, transform);
-
-    @include mq(tablet-only) {
-      right: 30px;
-    }
 
     &.is-open {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: translateX(0);
+
+      max-width: 250px;
+      height: 100vh;
     }
   }
 
