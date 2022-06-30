@@ -1,12 +1,9 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   left: 50%;
-  right: 50%;
-  transform: translate(-50%);
+  width: 100%;
 
+  transform: translate(-50%);
   padding-top: 8px;
   z-index: 199;
 
@@ -18,6 +15,12 @@
   @include mq(desktop) {
     padding-top: 21px;
   }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -37,7 +40,7 @@
 }
 
 .header__btn {
-  @include transition(transform, background-color, color);
+  @include transition(transform, opacity, visibility);
 
   &:hover,
   &:focus {
@@ -56,6 +59,10 @@
   }
 }
 
+.mobile-menu {
+  @include transition(all);
+}
+
 .header__menu-btn {
   border: none;
   background-color: transparent;
@@ -65,7 +72,7 @@
 
   cursor: pointer;
 
-  @include transition(transform, background-color, color);
+  @include transition(transform);
 
   &:hover,
   &:focus {
@@ -106,6 +113,7 @@
     display: none;
   }
 }
+
 .is-open.header__menu-btn {
   position: absolute;
   top: 16px;
@@ -113,9 +121,15 @@
   z-index: 199;
   fill: #ffffff;
 
+  @include transition(transform);
+
   &:hover,
   &:focus {
     fill: var(--burger-btn-accent-cl);
     transform: scale(1.1);
   }
+}
+
+.mobile-menu.is-open {
+  @include transition(transform, opacity, visibility);
 }
